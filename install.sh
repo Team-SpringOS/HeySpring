@@ -31,3 +31,5 @@ sudo cp /etc/os-release etc/os-release-backup
 # setting extensions
 
 # setting removing ubuntu branding
+
+# synth shell prompt
