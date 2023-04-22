@@ -1,7 +1,8 @@
 # removing ubuntu's stuff
 sudo apt remove --purge -y ubuntu-desktop
 sudo apt remove --purge -y ubuntu-desktop-minimal
-sudo apt remove --purge -y snap*
+sudo apt remove --purge -y ubuntu-minimal
+sudo apt remove --purge -y snap* snapd* ubuntu-advantage* ubuntu-wallpapers* ubuntu-standard ubuntu-settings ubuntu-session ubuntu-mono
 
 # adding required repos
 sudo add-apt-repository ppa:mozillateam/ppa -y
@@ -52,7 +53,8 @@ sudo nala install flatpak -y
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # install vanilla gnome
-sudo nala install vanilla-gnome-desktop vanilla-gnome-default-settings gnome-software gnome-software-plugin-flatpak firefox -y --no-install-recommends
+sudo nala install vanilla-gnome-desktop vanilla-gnome-default-settings -y --no-install-recommends
+sudo nala install -y nautilus adwaita-icon-theme-full fonts-cantarell gnome-calendar gnome-music totem gnome-software gnome-software-plugin-flatpak firefox ppa-purge gnome-calculator
 
 # setting spring theme
 
