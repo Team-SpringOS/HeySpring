@@ -11,7 +11,7 @@ sudo mv ./aptPreferences/SpringOS-defaults.pref /etc/apt/preferences.d/
 
 # editing release file
 sudo cp /etc/os-release /etc/os-release-backup
-sudo mv /etc/os-release .
+cat /etc/os-release >> os-release
 
 sed -i '/_URL=/d' os-release
 sed -i '/VERSION="/d' os-release
@@ -24,6 +24,7 @@ echo PRETTY_NAME=\"SpringOS alpha1\" >> os-release
 echo NAME=\"SpringOS\" >> os-release
 echo VERSION=\"alpha1\" >> os-release
 
+sudo rm /etc/os-release
 sudo mv ./os-release /etc/os-release
 
 # installing nala (a better frontend for apt)
