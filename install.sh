@@ -9,7 +9,7 @@ sudo add-apt-repository ppa:mozillateam/ppa -y
 # changing apt preferances
 sudo mv ./aptPreferences/SpringOS-defaults.pref /etc/apt/preferences.d/
 
-# editing release file
+# editing release files
 sudo cp /etc/os-release /etc/os-release-backup
 cat /etc/os-release >> os-release
 
@@ -26,6 +26,16 @@ echo VERSION=\"alpha1\" >> os-release
 
 sudo rm /etc/os-release
 sudo mv ./os-release /etc/os-release
+
+sudo cp /etc/lsb-release /etc/lsb-release-backup
+cat /etc/lsb-release >> lsb-release
+
+sed -i 's/DISTRIB_ID=Ubuntu/DISTRIB_ID=SpringOS/g' lsb-release
+sed -i '/DISTRIB_DESCRIPTION=/d' lsb-release
+echo 'DISTRIB_DESCRIPTION="SpringOS alpha1"' >> lsb-release
+
+sudo rm /etc/lsb-release
+sudo mv ./lsb-release /etc/lsb-release
 
 # installing nala (a better frontend for apt)
 sudo apt install nala -y
