@@ -10,7 +10,7 @@ sudo add-apt-repository ppa:mozillateam/ppa -y
 sudo mv ./aptPreferences/SpringOS-defaults.pref /etc/apt/preferences.d/
 
 # editing release file
-sudo cp /etc/os-release etc/os-release-backup
+sudo cp /etc/os-release /etc/os-release-backup
 sudo mv /etc/os-release .
 
 sed -i '/_URL=/d' os-release
