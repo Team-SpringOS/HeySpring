@@ -55,7 +55,7 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 
 # install vanilla gnome
 sudo nala install vanilla-gnome-desktop vanilla-gnome-default-settings -y --no-install-recommends
-sudo nala install -y gdm3 nautilus adwaita-icon-theme-full fonts-cantarell gnome-calendar gnome-music totem gnome-software gnome-software-plugin-flatpak firefox ppa-purge gnome-calculator
+sudo nala install -y gdm3 nautilus adwaita-icon-theme-full fonts-cantarell gnome-terminal gnome-calendar gnome-music totem gnome-software gnome-software-plugin-flatpak firefox ppa-purge gnome-calculator
 
 # setting spring theme
 
