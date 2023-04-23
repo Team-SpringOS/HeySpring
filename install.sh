@@ -2,7 +2,8 @@
 sudo apt remove --purge -y ubuntu-desktop
 sudo apt remove --purge -y ubuntu-desktop-minimal
 sudo apt remove --purge -y ubuntu-minimal
-sudo apt remove --purge -y snap* snapd* ubuntu-advantage* ubuntu-wallpapers* ubuntu-standard ubuntu-settings ubuntu-session ubuntu-mono
+sudo apt remove --purge -y snap* snapd* ubuntu-advantage* ubuntu-wallpapers* ubuntu-keyring ubuntu-standard ubuntu-settings ubuntu-session ubuntu-mono
+sudo apt remove --purge -y yaru*
 
 # adding required repos
 sudo add-apt-repository ppa:mozillateam/ppa -y
