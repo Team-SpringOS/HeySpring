@@ -1,9 +1,29 @@
 # removing ubuntu's stuff
-sudo apt remove --purge -y ubuntu-desktop
-sudo apt remove --purge -y ubuntu-desktop-minimal
-sudo apt remove --purge -y ubuntu-minimal
-sudo apt remove --purge -y snap* snapd* ubuntu-advantage* ubuntu-wallpapers* ubuntu-keyring ubuntu-standard ubuntu-settings ubuntu-session ubuntu-mono
+sudo apt remove --purge -y gnome-shell-extension-ubuntu-dock
+sudo apt remove --purge -y gsettings-ubuntu-schemas
+sudo apt remove --purge -y plymouth-theme-ubuntu-text 
+sudo apt remove --purge -y ubuntu-advantage-desktop-daemon 
+sudo apt remove --purge -y ubuntu-advantage-tools
+sudo apt remove --purge -y ubuntu-desktop-minimal 
+sudo apt remove --purge -y ubuntu-desktop 
+sudo apt remove --purge -y ubuntu-docs
+sudo apt remove --purge -y ubuntu-drivers-common
+sudo apt remove --purge -y ubuntu-keyring 
+sudo apt remove --purge -y ubuntu-minimal 
+sudo apt remove --purge -y ubuntu-mono 
+sudo apt remove --purge -y ubuntu-release-upgrader-core
+sudo apt remove --purge -y ubuntu-release-upgrader-gtk
+sudo apt remove --purge -y ubuntu-report
+sudo apt remove --purge -y ubuntu-session
+sudo apt remove --purge -y ubuntu-settings
+sudo apt remove --purge -y ubuntu-standard
+sudo apt remove --purge -y ubuntu-wallpaper*
+sudo apt remove --purge -y snapd*
 sudo apt remove --purge -y yaru*
+
+sudo apt autoremove -y
+
+sudo rm -r /usr/share/Yaru*
 
 # adding required repos
 sudo add-apt-repository ppa:mozillateam/ppa -y
