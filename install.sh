@@ -63,7 +63,7 @@ sudo mv ./lsb-release /etc/lsb-release
 sudo apt install nala -y
 
 # setting best mirrors for apt
-sudo nala fetch --auto
+sudo nala fetch --auto -y
 sudo nala update && sudo nala upgrade -y
 
 # multimedia codecs
